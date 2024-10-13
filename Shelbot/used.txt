@@ -1,0 +1,22 @@
+So to this first project I used the "transformers" library to get my answers form the internet
+
+In the list for library to AI development we got:
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+xgboost
+lightgbm
+tensorflow
+keras
+torch
+torchvision
+nltk
+spacy
+transformers
+opencv-python
+flask
+joblib
+
+All these library have a useful function in AI and are written in Python
