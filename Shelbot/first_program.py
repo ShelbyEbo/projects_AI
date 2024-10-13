@@ -1,7 +1,7 @@
 import sys
 from transformers import pipeline
 
-chatbot = pipeline("text-generation")
+chatbot = pipeline("text-generation", model="microsoft/DialoGPT-medium")
 
 print("Olá! Como posso lhe ajudar hoje?")
 while 1:
@@ -10,5 +10,4 @@ while 1:
         print("Bye! Thank you :D")
         break
     response = chatbot(user_input)
-    bot_responde = response[0]['generated_text'].split("Chatbot")
-    print(f"Chatbot: {bot_responde}")
+    print(f"Chatbot: {response.generated_responses[-1]}")
